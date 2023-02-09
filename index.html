@@ -8,12 +8,16 @@
     <title>vh converter</title>
 </head>
 <body> 
+
+    <img id="post" src="http://200.98.168.50/assets/images/post-imagem-canva.jpg" style="display: none;" >
+    <canvas style="display: none;" id="post-canvas" width="1080" height="1080"></canvas>
+    <a style="cursor:pointer;" id="btn-post">AQUI</a>
     <section>
         <div class="container text-center">
             <h1 class="mt-5 pt-4 fw-bold">Width Converter</h1>
             <div class="row mt-4 w-75 mx-auto">
                 <div class="col sm-12">
-                    <h2>(1024px)</h2>
+                    <h2>1024px</h2>
                     <form method="get" class="border p-3 rounded">
                         <div class="d-flex justify-content-between">
                             <div class="input-group me-3">
@@ -26,7 +30,7 @@
                     </form>
                 </div>
                 <div class="col sm-12">
-                    <h2>(1260px)</h2>
+                    <h2>1260px</h2>
                     <form method="get" class="border p-3 rounded">
                         <div class="d-flex justify-content-between">
                             <div class="input-group me-3">
@@ -36,6 +40,21 @@
                             <button type="button" value="Submit" onClick="converterB();" class="btn btn-success">ok</button>
                         </div>
                         <div id="resultsB" class="mt-4"></div>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-4 ">
+                <div class="col-5 mx-auto sm-12">
+                    <h2>vw</h2>
+                    <form method="get" class="border p-3 rounded">
+                        <div class="d-flex justify-content-between">
+                            <div class="input-group me-3">
+                                <span class="input-group-text"><i class="fa fa-sliders"></i></span>
+                                <input id="widthV" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="width">
+                            </div>
+                            <button type="button" value="Submit" onClick="converterV();" class="btn btn-success">ok</button>
+                        </div>
+                        <div id="resultsV" class="mt-4"></div>
                     </form>
                 </div>
             </div>
